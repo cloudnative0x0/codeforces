@@ -60,7 +60,12 @@ func main() {
 	scanner.Buffer(make([]byte, 1024*1024), 1024*1024)
 	scanner.Split(bufio.ScanWords)
 	writer := bufio.NewWriterSize(os.Stdout, 1<<20)
-	defer writer.Flush()
+	defer func(writer *bufio.Writer) {
+		err := writer.Flush()
+		if err != nil {
+			fmt.Printf("Error: %v\n", err)
+		}
+	}(writer)
 
 	readInt := func() int {
 		scanner.Scan()
@@ -79,6 +84,9 @@ func main() {
 		}
 
 		ans := solution(n, p)
-		fmt.Fprintln(writer, ans)
+		_, err := fmt.Fprintln(writer, ans)
+		if err != nil {
+			fmt.Printf("Error: %v\n", err)
+		}
 	}
 }
