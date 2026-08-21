@@ -46,12 +46,6 @@ ans := solution(3, p)
 
 Каждый из `n` шагов цикла — `O(n)`, итого `O(n²)` на тест-кейс, `O(n)` дополнительной памяти под копию массива. При `n ≤ 100` и `t ≤ 100` это укладывается в лимит на один тест (1 секунда) с большим запасом.
 
-### Сборка и тестирование
-
-```bash
-go test -v ./...
-```
-
 ---
 
 ## English
@@ -93,12 +87,6 @@ ans := solution(3, p)
 | check result | O(n) | verify every element is zero |
 
 Each of the `n` loop steps is `O(n)`, giving `O(n²)` per test case and `O(n)` extra memory for the array copy. With `n ≤ 100` and `t ≤ 100` this fits comfortably within the 1-second per-test limit.
-
-### Build and test
-
-```bash
-go test -v ./...
-```
 
 ---
 

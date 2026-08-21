@@ -46,12 +46,6 @@ ans := solution(2, len(b), b, c)
 | сортировка сумм | O(m log m) | суммы брендов по убыванию |
 | выбор топ-N | O(min(n, m)) | суммирование первых `min(n, m)` сумм |
 
-### Сборка и тестирование
-
-```bash
-go test -v ./...
-```
-
 ---
 
 ## English
@@ -94,11 +88,6 @@ ans := solution(2, len(b), b, c)
 | sort sums | O(m log m) | brand sums in descending order |
 | pick top-N | O(min(n, m)) | sum the first `min(n, m)` sums |
 
-### Build and test
-
-```bash
-go test -v ./...
-```
 
 ---
 
