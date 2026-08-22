@@ -37,7 +37,6 @@
 | сортировка сумм | O(m log m) | суммы брендов по убыванию |
 | выбор топ-N | O(min(n, m)) | суммирование первых `min(n, m)` сумм |
 
-
 ---
 
 ## English
@@ -70,6 +69,7 @@ The problem guarantees the sum of `k` across all test cases is bounded by `2·10
 | group by brand | O(k) | sum prices per brand via `map[int]int` |
 | sort sums | O(m log m) | brand sums in descending order |
 | pick top-N | O(min(n, m)) | sum the first `min(n, m)` sums |
+
 
 ---
 
