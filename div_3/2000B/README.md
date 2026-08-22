@@ -18,13 +18,6 @@
 
 Один запрос из `n` пассажиров обрабатывается за `O(n)` — по одному проходу по местам без вложенных циклов. Память — тоже `O(n)` на массив `bus`. Суммарно по всем запросам: `O(Σn)`.
 
-### Использование
-
-```bash
-go build -o bus main.go
-./bus < input.txt > output.txt
-```
-
 или сразу без сборки:
 
 ```bash
@@ -58,19 +51,6 @@ Allocate a boolean array `bus` of size `n + 2` — the extra slots on both ends 
 ### Complexity
 
 Each query with `n` passengers is processed in `O(n)` — a single pass over the boarding order, no nested loops. Memory is `O(n)` for the `bus` array. Across all queries: `O(Σn)`.
-
-### Usage
-
-```bash
-go build -o bus main.go
-./bus < input.txt > output.txt
-```
-
-or run directly without building a binary:
-
-```bash
-go run main.go < input.txt
-```
 
 ### Operations
 
