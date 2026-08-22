@@ -28,15 +28,6 @@
 
 По условию сумма `k` по всем тестам ограничена `2·10^5`, так что суммарная сложность по всем `t` тестам — `O(K log K)`, где `K` — суммарное число бутылок, а не `O(t · k log k)` с каждым `k` максимальным — иначе `t = 10^4` тестов по `k = 2·10^5` дали бы недопустимую сумму.
 
-### Использование
-
-```go
-b := []int{1, 1, 2, 3, 3, 3}
-c := []int{10, 20, 5, 1, 1, 1}
-ans := solution(2, len(b), b, c)
-// бренд 1: 10+20=30, бренд 2: 5, бренд 3: 1+1+1=3
-// топ-2: 30 + 5 = 35
-```
 
 ### Операции
 
@@ -46,11 +37,6 @@ ans := solution(2, len(b), b, c)
 | сортировка сумм | O(m log m) | суммы брендов по убыванию |
 | выбор топ-N | O(min(n, m)) | суммирование первых `min(n, m)` сумм |
 
-### Сборка и тестирование
-
-```bash
-go test -v ./...
-```
 
 ---
 
@@ -76,15 +62,6 @@ Grouping via `map[int]int` is `O(k)` average per insert, `O(k)` total for all `k
 
 The problem guarantees the sum of `k` across all test cases is bounded by `2·10^5`, so the total work across all `t` test cases is `O(K log K)`, where `K` is the combined bottle count, not `O(t · k log k)` with each `k` at its maximum — that bound would let `t = 10^4` cases at `k = 2·10^5` each blow past the stated limit.
 
-### Usage
-
-```go
-b := []int{1, 1, 2, 3, 3, 3}
-c := []int{10, 20, 5, 1, 1, 1}
-ans := solution(2, len(b), b, c)
-// brand 1: 10+20=30, brand 2: 5, brand 3: 1+1+1=3
-// top-2: 30 + 5 = 35
-```
 
 ### Operations
 
@@ -93,12 +70,6 @@ ans := solution(2, len(b), b, c)
 | group by brand | O(k) | sum prices per brand via `map[int]int` |
 | sort sums | O(m log m) | brand sums in descending order |
 | pick top-N | O(min(n, m)) | sum the first `min(n, m)` sums |
-
-### Build and test
-
-```bash
-go test -v ./...
-```
 
 ---
 
