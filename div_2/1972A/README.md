@@ -76,12 +76,6 @@ b = [1, 2, 3]
 
 При `n <= 100` и `t <= 100` это укладывается в лимит по времени с большим запасом.
 
-### Сборка и тестирование
-
-```bash
-go test -v ./...
-```
-
 ---
 
 ## English
@@ -153,12 +147,6 @@ memory: O(n)
 ```
 
 With `n <= 100` and `t <= 100`, this comfortably fits the time limit.
-
-### Build and test
-
-```bash
-go test -v ./...
-```
 
 ---
 
